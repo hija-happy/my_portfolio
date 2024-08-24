@@ -1,0 +1,17 @@
+.projects-section {
+    padding: 20px;
+    background-color: #fff9c4;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .projects-section h2 {
+    font-size: 24px;
+    color: #fbc02d;
+  }
+  
+  .projects-section p {
+    font-size: 18px;
+    color: #f57f17;
+  }
+  

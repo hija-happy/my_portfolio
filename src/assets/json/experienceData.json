@@ -1,0 +1,24 @@
+[
+    {
+      "companyLogo": "src/assets/images/niveus.png",
+      "companyName": "Niveus Solutions",
+      "projectTitle": "Intelligent Fleet Management",
+      "description": "Worked on a full-stack application using React and Node.js to improve the company's internal tools.",
+      "techStack": ["Flutter", "Firebase", "Figma"]
+    },
+    {
+      "companyLogo": "",
+      "companyName": "IIIT Allahabad",
+      "projectTitle": "Weapon Detection using",
+      "description": "Developed a machine learning model to predict customer behavior, leading to a 15% increase in sales.",
+      "techStack": ["Python", "OpenCV", "TensorFlow"]
+    },
+    {
+      "companyLogo": "SalesForce Administrator",
+      "companyName": "SalesForce",
+      "projectTitle": "Project Three",
+      "description": "Designed a mobile app to streamline the booking process for clients, reducing booking times by 30%.",
+      "techStack": ["Flutter", "Firebase", "Dart"]
+    }
+  ]
+  
