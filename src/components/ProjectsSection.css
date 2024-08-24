@@ -1,17 +1,85 @@
 .projects-section {
-    padding: 20px;
-    background-color: #fff9c4;
-    border-radius: 10px;
-    margin: 20px;
-  }
-  
-  .projects-section h2 {
-    font-size: 24px;
-    color: #fbc02d;
-  }
-  
-  .projects-section p {
-    font-size: 18px;
-    color: #f57f17;
-  }
-  
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Width of each card */
+  width: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-info {
+  margin-top: 1rem;
+}
+
+.project-info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.project-info strong {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.skills-section {
+  padding: 2rem;
+  background-color: #eaeaea; /* or any color you prefer */
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates a 4-column grid */
+  gap: 1rem; /* Space between grid items */
+  justify-items: center; /* Center items horizontally */
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: #fff; /* or any color you prefer */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+  width: 70px; /* Adjust size as needed */
+  height: 70px; /* Adjust size as needed */
+  margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+  margin: 0;
+}

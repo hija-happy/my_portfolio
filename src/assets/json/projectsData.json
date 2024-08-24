@@ -1,0 +1,43 @@
+[
+    {
+      "projectImage": "images/fleet.jpg",
+      "projectTitle": "Intelligent Fleet Management",
+      "projectDescription": [
+        "Developed a mobile app using Flutter and Firebase to manage vehicle fleets efficiently.",
+        "Implemented real-time tracking and analytics to optimize routes and reduce fuel consumption.",
+        "Collaborated with UI/UX designers using Figma to create an intuitive user interface."
+      ],
+      "techStack": ["Flutter", "Firebase", "Figma"]
+    },
+    {
+      "projectImage": "images/weapon.jpg",
+      "projectTitle": "Weapon Detection System",
+      "projectDescription": [
+        "Designed a machine learning model using Python, OpenCV, and TensorFlow to detect weapons in real-time video streams.",
+        "Deployed the model to a cloud environment for scalable processing.",
+        "Achieved 95% accuracy in detection, significantly improving security measures."
+      ],
+      "techStack": ["Python", "OpenCV", "TensorFlow"]
+    },
+    {
+      "projectImage": "images/sports.avif",
+      "projectTitle": "Sport Management",
+      "projectDescription": [
+        "Completed an internship focused on Salesforce administration and application development.",
+        "Automated customer service processes to improve response times and client satisfaction.",
+        "Gained hands-on experience with Salesforce tools and workflows."
+      ],
+      "techStack": ["Flutter", "Fire", "Visualforce"]
+    },
+    {
+        "projectImage": "images/emotion.jpeg",
+        "projectTitle": "Emotion Detection",
+        "projectDescription": [
+          "Completed an internship focused on Salesforce administration and application development.",
+          "Automated customer service processes to improve response times and client satisfaction.",
+          "Gained hands-on experience with Salesforce tools and workflows."
+        ],
+        "techStack": ["Python", "TenserFlow", "OpenCV"]
+      }
+  ]
+  
