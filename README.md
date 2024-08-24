@@ -2,6 +2,8 @@
 
 Hello! I'm Hija Happy, an Engineering student specializing in Computer Science and Engineering. This portfolio showcases my journey, projects, and experiences. Dive in to learn more about what I’m up to and get in touch with me!
 
+**Note:** This project is a work in progress. New features and updates are continuously being added!
+
 ## 🌟 Features
 
 - **Modern & Sleek Design:** Built with React.js to offer a seamless, single-page experience.
