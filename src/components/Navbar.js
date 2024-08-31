@@ -5,6 +5,7 @@ import './Navbar.css'; // Import custom CSS for Navbar
 const Navbar = () => {
   return (
     <nav className="navbar">
+      <div className="navbar-logo"></div> {/* Logo container with embedded text */}
       <ul className="navbar-nav">
         <li className="nav-item">
           <Link to="/" className="nav-link nav-hover">Home</Link>
