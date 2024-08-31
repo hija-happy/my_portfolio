@@ -1,8 +1,34 @@
-.projects-section {
+.projects-section,
+.skills-section {
   padding: 2rem;
-  background-color: #f9f9f9;
+  padding-bottom: 100;
+  
+  /* Increase this value based on your footer height */
 }
 
+.projects-container,
+.skills-container {
+  /* Ensure that the containers take up the full width available */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 100;
+}
+
+.project-item,
+.skill-item {
+  /* Adjust width based on design */
+  margin: 15px;
+}
+
+.project-image img,
+.skill-icon {
+  /* Ensure icons and images are responsive and well-sized */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Specific styling for projects section */
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -50,7 +76,7 @@
   color: #333;
 }
 
-
+/* Specific styling for skills section */
 .skills-section {
   padding: 2rem;
   background-color: #eaeaea; /* or any color you prefer */

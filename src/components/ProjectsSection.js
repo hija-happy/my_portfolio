@@ -1,25 +1,53 @@
 import React from 'react';
+import AndroidSVG from '../assets/icons/Android.svg';
+import CSSSVG from '../assets/icons/CSS3.svg';
+import FirebaseIcon from '../assets/icons/Firebase.svg';
+import FlutterIcon from '../assets/icons/Flutter.svg';
+import HTML5Icon from '../assets/icons/HTML5.svg';
+import JavaIcon from '../assets/icons/Java.svg';
+import JSIcon from '../assets/icons/JavaScript.svg';
+import PythonSVG from '../assets/icons/Python.svg';
+
+import C from '../assets/icons/C.svg';
+import Dart from '../assets/icons/Dart.svg';
+import DjangoSV from '../assets/icons/Django.svg';
+import FigmaSVG from '../assets/icons/Figma.svg';
+import GitIcon from '../assets/icons/Git.svg';
+import LinuxSVG from '../assets/icons/Linux.svg';
+import My from '../assets/icons/MySQL.svg';
+import Numpy from '../assets/icons/NumPy.svg';
+import SQL from '../assets/icons/SQLite.svg';
+import TF from '../assets/icons/TensorFlow.svg';
+import Keras from '../assets/icons/Keras.svg';
 import projectsData from '../assets/json/projectsData.json';
 import './ProjectsSection.css'; // Make sure to update or create this CSS file
 
 const skillsData = [
-  { icon: 'https://img.icons8.com/?size=100&id=79904&format=png&color=000000', text: 'HTML' },
-  { icon: 'https://img.icons8.com/?size=100&id=13745&format=png&color=000000', text: 'CSS' },
-  { icon: 'https://img.icons8.com/?size=100&id=59621&format=png&color=000000', text: 'JavaScript' },
-  { icon: 'https://img.icons8.com/?size=100&id=64462&format=png&color=000000', text: 'Python' },
-  { icon: 'https://img.icons8.com/?size=100&id=14382&format=png&color=000000', text: 'Java' },
-  { icon: 'https://img.icons8.com/?size=100&id=72265&format=png&color=000000', text: 'C' },
-  { icon: 'https://img.icons8.com/?size=100&id=72938&format=png&color=000000', text: 'Django' },
-  { icon: 'https://img.icons8.com/?size=100&id=14873&format=png&color=000000', text: 'Firebase' },
-  { icon: 'https://img.icons8.com/?size=100&id=79904&format=png&color=000000', text: 'Flutter' },
-  { icon: 'https://img.icons8.com/?size=100&id=13745&format=png&color=000000', text: 'OpenCV' },
-  { icon: 'https://img.icons8.com/?size=100&id=59621&format=png&color=000000', text: 'Figma' },
-  { icon: 'https://img.icons8.com/?size=100&id=64462&format=png&color=000000', text: 'LightRoom' },
-  { icon: 'https://img.icons8.com/?size=100&id=14382&format=png&color=000000', text: 'Git' },
-  { icon: 'https://img.icons8.com/?size=100&id=72265&format=png&color=000000', text: 'React' },
-  { icon: 'https://img.icons8.com/?size=100&id=72938&format=png&color=000000', text: 'TensorFlow' },
-  { icon: 'https://img.icons8.com/?size=100&id=14873&format=png&color=000000', text: 'Firebase' },
-  // Add more skills if needed
+  { icon: HTML5Icon, text: 'HTML' },
+  { icon: CSSSVG, text: 'CSS' },
+  { icon: JSIcon, text: 'JavaScript' },
+  { icon: PythonSVG, text: 'Python' },
+
+  { icon: JavaIcon, text: 'Java' },
+   { icon: C, text: 'C' },
+   { icon: DjangoSV, text: 'Django' },
+   { icon: FirebaseIcon, text: 'Firebase' },
+
+   { icon: FlutterIcon, text: 'Flutter' },
+  { icon: Dart, text: 'Dart' },
+  { icon: FigmaSVG, text: 'Figma' },
+     { icon: FigmaSVG, text: 'LightRoom' },
+
+   { icon: GitIcon, text: 'Git' },
+  { icon: AndroidSVG, text: 'Android' },
+   { icon: TF, text: 'TensorFlow' },
+   { icon: LinuxSVG, text: 'Linux' },
+   
+   { icon: My, text: 'MySQL' },
+  { icon: Numpy, text: 'Numpy' },
+   { icon: Keras, text: 'Keras' },
+   { icon: SQL, text: 'SQLite' },
+
 ];
 
 const ProjectsSection = () => {
@@ -33,7 +61,7 @@ const ProjectsSection = () => {
               <div className="project-image">
                 <img
                   src={process.env.PUBLIC_URL + '/' + project.projectImage}
-                  alt={`${project.projectTitle} image`}
+                  alt={`${project.projectTitle} Projectimage`}
                   className="project-logo"
                 />
               </div>
