@@ -99,3 +99,14 @@ button:hover {
   max-width: 100%;
   height: auto;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-illustration {
+    display: none; 
+  }
+}
