@@ -1,39 +1,13 @@
-.projects-section,
-.skills-section {
+.projects-section {
   padding: 2rem;
-  padding-bottom: 100;
-  
-  /* Increase this value based on your footer height */
+  padding-bottom: 100px; /* Ensure padding is in pixels */
 }
 
-.projects-container,
-.skills-container {
-  /* Ensure that the containers take up the full width available */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 100;
-}
-
-.project-item,
-.skill-item {
-  /* Adjust width based on design */
-  margin: 15px;
-}
-
-.project-image img,
-.skill-icon {
-  /* Ensure icons and images are responsive and well-sized */
-  max-width: 100%;
-  height: auto;
-}
-
-/* Specific styling for projects section */
 .projects-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates a 2-column grid */
+  gap: 1.5rem; /* Adjust gap as needed to create space between cards */
+  justify-items: center; /* Center items horizontally */
 }
 
 .project-item {
@@ -76,28 +50,37 @@
   color: #333;
 }
 
-/* Specific styling for skills section */
 .skills-section {
   padding: 2rem;
-  background-color: #eaeaea; /* or any color you prefer */
+  background-color: #eaeaea; /* Light gray background */
 }
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Creates a 4-column grid */
+  grid-template-columns: repeat(10, 1fr); /* Default to 10 columns */
   gap: 1rem; /* Space between grid items */
   justify-items: center; /* Center items horizontally */
 }
 
+/* Adjust the layout for mobile view */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for mobile */
+    grid-template-rows: repeat(5, auto); /* 5 rows for mobile */
+  }
+}
+
+/* Ensure each skill item takes full width of its grid cell */
 .skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 1rem;
-  background: #fff; /* or any color you prefer */
+  background: #fff; /* White background for items */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width of the grid cell */
 }
 
 .skill-icon {

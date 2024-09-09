@@ -1,25 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import experienceData from '../assets/json/experienceData.json';
 import './ExperienceSection.css';
 
 const ExperienceSection = () => {
-  const sectionRefs = useRef([]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      sectionRefs.current.forEach((ref) => {
-        if (ref && ref.getBoundingClientRect().top < window.innerHeight) {
-          ref.classList.add('fade-in');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check on load
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <section id='experience' className='experience-section'>
       <h2>Experience</h2>
@@ -28,7 +11,6 @@ const ExperienceSection = () => {
           <div
             key={index}
             className='experience-item'
-            ref={(el) => (sectionRefs.current[index] = el)}
           >
             <div className='experience-logo'>
               <img
