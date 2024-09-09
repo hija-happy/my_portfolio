@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './assets/styles/global.css'; // Import global CSS
-import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';
