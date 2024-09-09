@@ -1,34 +1,164 @@
-.about-section {
+/* Reset default margin and padding for html and body */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Remove scrollbars */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  /* Example footer styling */
+  background-color: #007BFF; /* Footer color */
+  color: #fff;
   padding: 20px;
-  background-color: #e0f7fa;
-  border-radius: 10px;
-  margin: 20px;
+  text-align: center;
+  margin-top: auto; /* Push footer to the bottom of the page */
 }
 
-.about-section h2 {
+.about-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  min-height: calc(100vh - 80px); /* Ensure the section takes full viewport height minus footer height */
+  background-color: #e0f7fa; /* Light blue background */
+  color: #000; /* Dark text color for contrast */
+  padding: 0 20px; /* Padding for left and right, no top/bottom padding */
+  box-sizing: border-box; /* Includes padding in the total width/height */
+  margin: 0; /* Ensure no margin */
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px; /* Limits the max width of the content */
+  width: 100%;
+  gap: 50px;
+  box-sizing: border-box; /* Includes padding in the total width */
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 20px;
+  overflow: visible; /* Allow text overflow if necessary */
+}
+
+.about-image {
+  flex-shrink: 0;
+  position: relative; /* Ensure positioning context for glowing effect */
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00796b; /* Dark teal border */
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative; /* Ensure glow effect is visible */
+  z-index: 1; /* Ensure the image is above other content */
+}
+
+.big-text {
+  font-size: 48px;
+  background: linear-gradient(90deg, #00C9FF, #92FE9D, #FEF253);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.medium-text {
   font-size: 24px;
-  color: #00796b;
 }
 
-.about-section p {
-  font-size: 18px;
-  color: #004d40;
+.small-text {
+  font-size: 16px;
   text-align: justify;
 }
 
-
-.fade-in {
-  opacity: 0;
-  transform: translateX(20px);
-  animation: fadeIn 1s ease-in forwards;
+.profile-pic:hover {
+  box-shadow: 0 0 30px 10px rgba(145, 59, 59, 0.7); /* Stronger glow on hover */
 }
 
 @keyframes fadeIn {
-
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
-  
 }
 
+/* Styles for medium screens */
+@media (max-width: 1200px) {
+  .about-row {
+    gap: 30px; /* Adjust gap for medium screens */
+  }
+}
+
+/* Styles for small screens */
+@media (max-width: 992px) {
+  .about-row {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Adjust gap between stacked elements */
+  }
+
+  .about-text {
+    padding-right: 0; /* Remove right padding for stacked layout */
+    text-align: center; /* Center text for better readability */
+  }
+
+  .profile-pic {
+    width: 250px; /* Slightly smaller profile picture */
+    height: 250px;
+  }
+
+  .big-text {
+    font-size: 36px; /* Adjust font size for smaller screens */
+  }
+
+  .medium-text {
+    font-size: 20px; /* Adjust font size for medium text */
+  }
+
+  .small-text {
+    font-size: 14px; /* Adjust font size for small text */
+  }
+}
+
+/* Styles for very small screens */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 0 20px; /* Add padding for small screens */
+    min-height: calc(100vh - 80px); /* Ensure height remains full viewport height minus footer height */
+    overflow: visible; /* Allow overflow */
+  }
+
+  .about-row {
+    gap: 15px; /* Reduce gap for very small screens */
+  }
+
+  .profile-pic {
+    width: 200px; /* Smaller profile picture for very small screens */
+    height: 200px;
+  }
+
+  .big-text {
+    font-size: 28px; /* Further reduce font size */
+  }
+
+  .medium-text {
+    font-size: 18px; /* Further reduce font size */
+  }
+
+  .small-text {
+    font-size: 12px; /* Further reduce font size */
+  }
+}
