@@ -7,7 +7,8 @@
         "Implemented real-time tracking and analytics to optimize routes and reduce fuel consumption.",
         "Collaborated with UI/UX designers using Figma to create an intuitive user interface."
       ],
-      "techStack": ["Flutter", "Firebase", "Figma"]
+      "techStack": ["Flutter", "Firebase", "Figma"],
+      "projectLink" : "https://github.com/hija-happy/fleet-master"
     },
     {
       "projectImage": "images/weapon.jpg",
@@ -17,7 +18,9 @@
         "Deployed the model to a cloud environment for scalable processing.",
         "Achieved 95% accuracy in detection, significantly improving security measures."
       ],
-      "techStack": ["Python", "OpenCV", "TensorFlow"]
+      "techStack": ["Python", "OpenCV", "TensorFlow"],
+      "projectLink" : "https://github.com/hija-happy/Weapon-Detection-Yolo"
+      
     },
     {
       "projectImage": "images/sports.avif",
@@ -27,7 +30,8 @@
         "Automated customer service processes to improve response times and client satisfaction.",
         "Gained hands-on experience with Salesforce tools and workflows."
       ],
-      "techStack": ["Flutter", "Fire", "Visualforce"]
+      "techStack": ["Flutter", "FireBase", "Figma"],
+      "projectLink" : "https://github.com/hija-happy/flutter-sportsapp"
     },
     {
         "projectImage": "images/emotion.jpeg",
@@ -37,7 +41,8 @@
           "Automated customer service processes to improve response times and client satisfaction.",
           "Gained hands-on experience with Salesforce tools and workflows."
         ],
-        "techStack": ["Python", "TenserFlow", "OpenCV"]
+        "techStack": ["Python", "TenserFlow", "OpenCV"],
+        "projectLink" : "https://github.com/hija-happy/facial-emotion-detection-using-opencv"
       }
   ]
   
