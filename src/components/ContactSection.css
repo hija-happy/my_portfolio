@@ -1,25 +1,32 @@
 .contact-page {
-  align-content: center;
-  padding-top: 150px;
-  padding-bottom: 150px; /* Padding for the entire page */
+  display: flex;
+  justify-content: center;
+  /* Adjusted padding for the entire page */
 }
 
 .contact-section {
-  padding: 40px;
-  padding-bottom: 200px;
-  background-color: #ffffff; 
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
- 
-  margin: px auto; 
-  
+  display: flex;
+  align-items: stretch; /* Ensure that the items stretch to the full height */
+  max-width: 1200px; /* Adjust width as needed */
+  width: 100%;
 }
 
-.contact-section h2 {
-  margin-bottom: 25px;
-  
-  font-size: 2.5rem;
+.contact-content {
+  display: flex;
+  flex: 1;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 30px; /* Reduced padding */
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px; /* Reduced margin */
+  font-size: 2rem; /* Adjusted font size */
   color: #333;
   text-align: center;
   font-weight: bold;
@@ -28,18 +35,17 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
-  justify-content: space-between;
+  gap: 15px; /* Reduced gap */
 }
 
 label {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Adjusted font size */
   color: #555;
 }
 
 input,
 textarea {
-  padding: 15px;
+  padding: 10px; /* Adjusted padding */
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 1rem;
@@ -49,33 +55,47 @@ textarea {
 
 textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 100px; /* Adjusted min-height */
 }
 
 button {
-  padding: 15px;
+  padding: 10px; /* Adjusted padding */
   border: none;
   border-radius: 8px;
-  background-color: #007bff;   color: #fff;
+  background-color: #007bff;
+  color: #fff;
   cursor: pointer;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;  
+  font-size: 1rem; /* Adjusted font size */
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3; 
+  background-color: #0056b3;
+}
+
+.status-message,
+.loading-message {
+  margin-top: 15px; /* Reduced margin */
+  font-size: 1rem; /* Adjusted font size */
+  text-align: center;
 }
 
 .status-message {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #28a745; 
-  text-align: center;
+  color: #28a745;
 }
 
 .loading-message {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #007bff; 
-  text-align: center;
+  color: #007bff;
+}
+
+.contact-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-illustration img {
+  max-width: 100%;
+  height: auto;
 }

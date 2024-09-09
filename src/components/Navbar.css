@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between; /* Space between items */
   align-items: center; /* Align items vertically centered */
-  height: 60px; /* Fixed height for the navbar */
+  height: 40px; /* Fixed height for the navbar */
   position: relative; /* Allows absolute positioning for elements */
 }
 
