@@ -1,20 +1,27 @@
 /* Navbar.css */
 .navbar {
-  background-color: #333; /* Dark background color for navbar */
+  background-color: #007BFF; /* Primary Blue for navbar background */
   padding: 10px 20px; /* Padding for navbar */
   display: flex;
   justify-content: space-between; /* Space between items */
   align-items: center; /* Align items vertically centered */
+  height: 60px; /* Fixed height for the navbar */
+  position: relative; /* Allows absolute positioning for elements */
 }
 
-.navbar .navbar-logo {
-  color: #fff; /* Text color for the logo */
+.navbar-logo {
+  color: #FFDD57; /* Yellow color for the logo text */
   font-size: 24px; /* Font size for the logo */
   font-weight: bold; /* Bold font for the logo */
 }
 
-.navbar .navbar-logo::before {
-  content: "HijA HAPPY"; /* Text content for the logo */
+.drawer-toggle {
+  display: none; /* Hide the drawer toggle button on larger screens */
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff; /* White color for the toggle button */
+  cursor: pointer; /* Pointer cursor for clickable button */
 }
 
 .navbar-nav {
@@ -30,12 +37,94 @@
 }
 
 .nav-link {
-  color: #fff; /* Text color for nav links */
+  color: #fff; /* White text color for nav links */
   text-decoration: none; /* Remove underline from links */
   font-size: 18px; /* Font size for nav links */
-  transition: color 0.3s; /* Smooth color transition */
+  transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
+  padding: 5px 10px; /* Padding around nav links */
+  border-radius: 4px; /* Rounded corners */
 }
 
-.nav-hover:hover {
-  color: #4fc3f7; /* Color change on hover */
+.nav-link:hover {
+  color: #fff; /* White text color on hover */
+  background-color: #0056b3; /* Dark Blue background color on hover */
+}
+
+/* Drawer styles */
+.drawer {
+  display: none; /* Hide the drawer by default */
+  position: fixed; /* Fix position on the screen */
+  top: 0;
+  right: 0;
+  background-color: #007BFF; /* Match the navbar background */
+  width: 250px; /* Width of the drawer */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Scrollable if content exceeds height */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow for drawer */
+  z-index: 1000; /* Ensure drawer is above other content */
+  transition: transform 0.3s ease; /* Smooth transition for opening */
+  transform: translateX(100%); /* Initially hidden */
+}
+
+.drawer.open {
+  display: block; /* Show the drawer when it is open */
+  transform: translateX(0); /* Slide in from the right */
+}
+
+.drawer .drawer-close {
+  display: flex; /* Close button styles */
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff; /* White color for the close button */
+  cursor: pointer;
+}
+
+.drawer .drawer-nav {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+.drawer .drawer-nav .drawer-item {
+  padding: 10px; /* Padding around nav items */
+}
+
+.drawer .drawer-nav .drawer-link {
+  color: #fff; /* White text color for drawer links */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Block display for full width clickable area */
+  font-size: 18px; /* Font size for drawer links */
+  transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.drawer .drawer-nav .drawer-link:hover {
+  color: #fff; /* White text color on hover */
+  background-color: #0056b3; /* Dark Blue background color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) { /* Mobile screens */
+  .navbar {
+    justify-content: space-between; /* Maintain space between items */
+  }
+
+  .drawer-toggle {
+    display: block; /* Show the drawer toggle button on small screens */
+  }
+
+  .navbar-nav {
+    display: none; /* Hide the full navigation links on small screens */
+  }
+}
+
+@media (min-width:600px) { /* Larger screens */
+  .drawer-toggle {
+    display: none; /* Hide the drawer toggle button on larger screens */
+  }
+
+  .drawer {
+    display: none; /* Ensure drawer is hidden on larger screens */
+  }
 }
