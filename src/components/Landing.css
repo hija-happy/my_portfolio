@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Dancing Matilda';
+  src: url('../../public/fonts/DancingMatilda.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Styles */
+.landing-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes the video cover the entire background */
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+
+.overlay {
+    position: absolute; /* Sit on top of the page content */
+      width: 200px; /* Full width (cover the whole page) */
+    height: 200px; /* Full height (cover the whole page) */
+    top: 120px;
+    left: 30;
+    right: 20;
+    bottom: 40;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+
+.logo {
+  width: 200px; /* Adjust size as needed */
+  height: 200px;
+  /* Reduce space between logo and name */
+}
+
+.name {
+  font-family: 'Dancing Matilda', 'Dancing Script', cursive;
+  color: #0a3663;
+  font-size: 5rem; /* Adjust font size if necessary */
+  margin-top: 10px; /* Remove any extra space above the name */
+  margin-bottom: 10px; /* Reduce space below the name */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds shadow to make text readable over video */
+}
+
+.arrow {
+  margin-bottom: 10; /* Reduce the space between the name and the arrow */
+  font-size: 3rem;
+  color: #0a3663;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  transform: translateY(10px); /* Smooth movement when hovering */
+}
