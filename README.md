@@ -1,4 +1,4 @@
-# Welcome to My Portfolio Website 🚀
+# Welcome to My Portfolio 🚀
 
 Hello! I'm Hija Happy, an Engineering student specializing in Computer Science and Engineering. This portfolio showcases my journey, projects, and experiences. Dive in to learn more about what I’m up to and get in touch with me!
 
@@ -68,6 +68,11 @@ Feel free to follow the existing coding style and guidelines.
 
 - **LinkedIn:** [Hija Happy](https://www.linkedin.com/in/hija-happy)
 - **Email:** hijahappy2004@gmail.com
+
+## 🌐 Live Portfolio  
+
+You can explore my portfolio [here](https://hijahappy.netlify.app/):  *(Currently under development—stay tuned for updates!)*  
+
 
 Thanks for checking out my portfolio! If you have any questions or just want to chat, don’t hesitate to reach out.
 
