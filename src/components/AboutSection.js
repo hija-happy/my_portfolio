@@ -3,6 +3,8 @@ import profilePic from '../assets/icons/profile.png';
 import './AboutSection.css'; 
 
 const AboutSection = () => {
+
+
   return (
     <section id = 'about' className='about-section'> 
       <div className='about-row'>

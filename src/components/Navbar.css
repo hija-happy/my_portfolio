@@ -1,36 +1,19 @@
-.navbar {
-  background-color: #a9cdee;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  height: 40px;
-  position: relative; 
+body {
+  /* Add space at the top so content doesn't get hidden behind the navbar */
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden; 
 }
 
-.navbar-logo {
-  color: #FFDD57; 
-  font-size: 24px;  
-  font-weight: bold;  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.drawer-toggle {
-  display: none; 
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: #fff; 
-  cursor: pointer; 
+html, body {
+  overflow-x: hidden;
 }
-
-.navbar-nav {
-  list-style: none;
-  display: flex; 
-  gap: 15px; 
-  padding: 0;
-  margin: 0;
-}
-
 
 button.nav-link {
   all: unset; 
@@ -55,6 +38,35 @@ button.nav-link:hover {
 }
 
 
+.navbar {
+  background-color: transparent !important;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  height: 60px;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  position: fixed; 
+  backdrop-filter: blur(10px);
+}
+
+
+.navbar-logo {
+  color: #ffb957; 
+  font-size: 24px;  
+  font-weight: bold;  
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex; 
+  gap: 15px; 
+  padding: 0;
+  margin: 0;
+}
+
 .nav-item {
   margin: 0; }
 
@@ -74,6 +86,17 @@ button.nav-link:hover {
   border: none; /* No border on hover */
 }
 
+.drawer-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff; 
+  cursor: pointer; 
+}
+
+
+/* This is Drawer for MOBILE VIEW*/
 .drawer {
   display: none;
   position: fixed; 
@@ -126,6 +149,8 @@ button.nav-link:hover {
   color: #fff; 
   background-color: #0056b3;
 }
+
+/* This is for Mobile View with screen width < 600px */
 @media (max-width: 600px) { 
   .navbar {
     justify-content: space-between; 
@@ -149,3 +174,4 @@ button.nav-link:hover {
     display: none; 
   }
 }
+

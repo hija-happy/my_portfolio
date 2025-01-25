@@ -1,8 +1,7 @@
 
 .experience-section {
-  background-color: #f7f7f7;
+  background-color: #3E5879;
   padding: 50px;
-  border-radius: 10px;
   max-width: 1000px;
   margin: auto;
 }
@@ -29,8 +28,9 @@
 }
 
 h2 {
-  font-size: 36px;
-  color: #333;
+  font-size: 60px;
+  text-shadow: #000000  2px 2px 0px;
+  color: #ffffff;
   margin-bottom: 40px;
   text-align: center;
 }
