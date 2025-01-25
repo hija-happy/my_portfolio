@@ -1,6 +1,6 @@
 import React from 'react';
 import profilePic from '../assets/icons/profile.png';
-import './AboutSection.css'; // Import custom CSS for AboutSection
+import './AboutSection.css'; 
 
 const AboutSection = () => {
   return (

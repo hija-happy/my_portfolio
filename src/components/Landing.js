@@ -22,13 +22,15 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <video className="background-video" autoPlay loop muted>
-        <source src={`${process.env.PUBLIC_URL}/video/landing5.mp4`} type="video/mp4" />
+        <source src={`${process.env.PUBLIC_URL}/video/landing6.mp4`} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       <div className="content">
-        <img src={`${process.env.PUBLIC_URL}/images/HH.png`} alt="Logo" className="overlay" />
-        <h1 className="name">Hija Happy</h1>
+        
+          <img src={`${process.env.PUBLIC_URL}/images/HH.png`} alt="Logo" className="overlay" />
+          <h1 className="name">Hija Happy</h1>
+        
         <div className="arrow" onClick={goToAboutMe}>
           <span>&#8595;</span> {/* Down arrow */}
         </div>

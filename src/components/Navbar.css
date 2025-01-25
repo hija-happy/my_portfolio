@@ -1,130 +1,151 @@
-/* Navbar.css */
 .navbar {
-  background-color: #007BFF; /* Primary Blue for navbar background */
-  padding: 10px 20px; /* Padding for navbar */
+  background-color: #a9cdee;
+  padding: 10px 20px;
   display: flex;
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Align items vertically centered */
-  height: 40px; /* Fixed height for the navbar */
-  position: relative; /* Allows absolute positioning for elements */
+  justify-content: space-between;
+  align-items: center; 
+  height: 40px;
+  position: relative; 
 }
 
 .navbar-logo {
-  color: #FFDD57; /* Yellow color for the logo text */
-  font-size: 24px; /* Font size for the logo */
-  font-weight: bold; /* Bold font for the logo */
+  color: #FFDD57; 
+  font-size: 24px;  
+  font-weight: bold;  
 }
 
 .drawer-toggle {
-  display: none; /* Hide the drawer toggle button on larger screens */
+  display: none; 
   background: none;
   border: none;
   font-size: 24px;
-  color: #fff; /* White color for the toggle button */
-  cursor: pointer; /* Pointer cursor for clickable button */
+  color: #fff; 
+  cursor: pointer; 
 }
 
 .navbar-nav {
-  list-style: none; /* Remove default list styles */
-  display: flex; /* Display nav items in a row */
-  gap: 15px; /* Space between nav items */
+  list-style: none;
+  display: flex; 
+  gap: 15px; 
   padding: 0;
   margin: 0;
 }
 
-.nav-item {
-  margin: 0; /* Remove margin */
+
+button.nav-link {
+  all: unset; 
+  padding: 10px 10px; 
+  font-size: 17px; 
+  color: black; 
+  background-color: transparent; /* Remove the blue background */
+  border: none; /* Remove any borders */
+  text-align: center; 
+  cursor: pointer; 
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+  outline: none; /* Ensure no outline */
 }
 
+
+button.nav-link:hover {
+  color: #ffffff; /* Example hover color */
+  text-decoration: underline;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.15); /* Shadow with minimal feather */
+  background-color: transparent; /* Ensure no background color */
+  border: none;
+}
+
+
+.nav-item {
+  margin: 0; }
+
 .nav-link {
-  color: #fff; /* White text color for nav links */
-  text-decoration: none; /* Remove underline from links */
-  font-size: 18px; /* Font size for nav links */
-  transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
-  padding: 5px 10px; /* Padding around nav links */
-  border-radius: 4px; /* Rounded corners */
+  color: #fff;
+  text-decoration: none; 
+  font-size: 18px; 
+  transition: color 0.3s, background-color 0.3s; 
+  padding: 5px 10px; 
+  border-radius: 4px; 
 }
 
 .nav-link:hover {
-  color: #fff; /* White text color on hover */
-  background-color: #0056b3; /* Dark Blue background color on hover */
+  color: #fff;
+  background-color: transparent; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border: none; /* No border on hover */
 }
 
-/* Drawer styles */
 .drawer {
-  display: none; /* Hide the drawer by default */
-  position: fixed; /* Fix position on the screen */
+  display: none;
+  position: fixed; 
   top: 0;
   right: 0;
-  background-color: #007BFF; /* Match the navbar background */
-  width: 250px; /* Width of the drawer */
-  height: 100vh; /* Full viewport height */
-  overflow-y: auto; /* Scrollable if content exceeds height */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow for drawer */
-  z-index: 1000; /* Ensure drawer is above other content */
-  transition: transform 0.3s ease; /* Smooth transition for opening */
-  transform: translateX(100%); /* Initially hidden */
+  background-color: #6993c1; 
+  width: 250px;
+  height: 100vh; 
+  overflow-y: auto; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  z-index: 1000; 
+  transition: transform 0.3s ease;  
+  transform: translateX(100);
 }
 
 .drawer.open {
-  display: block; /* Show the drawer when it is open */
-  transform: translateX(0); /* Slide in from the right */
+  display: block; 
+  transform: translateX(0); 
 }
 
 .drawer .drawer-close {
-  display: flex; /* Close button styles */
+  display: flex;
   justify-content: flex-end;
   padding: 10px;
   font-size: 24px;
-  color: #fff; /* White color for the close button */
+  color: #fff; 
   cursor: pointer;
 }
 
 .drawer .drawer-nav {
-  list-style: none; /* Remove default list styles */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .drawer .drawer-nav .drawer-item {
-  padding: 10px; /* Padding around nav items */
+  padding: 10px; 
 }
 
 .drawer .drawer-nav .drawer-link {
-  color: #fff; /* White text color for drawer links */
-  text-decoration: none; /* Remove underline from links */
-  display: block; /* Block display for full width clickable area */
-  font-size: 18px; /* Font size for drawer links */
-  transition: color 0.3s, background-color 0.3s; /* Smooth color transition */
-  border-radius: 4px; /* Rounded corners */
+  color: #fff;
+  text-decoration: none; 
+  display: block;  
+  font-size: 18px; 
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 4px; 
 }
 
 .drawer .drawer-nav .drawer-link:hover {
-  color: #fff; /* White text color on hover */
-  background-color: #0056b3; /* Dark Blue background color on hover */
+  color: #fff; 
+  background-color: #0056b3;
 }
-
-/* Responsive Styles */
-@media (max-width: 600px) { /* Mobile screens */
+@media (max-width: 600px) { 
   .navbar {
-    justify-content: space-between; /* Maintain space between items */
+    justify-content: space-between; 
   }
 
   .drawer-toggle {
-    display: block; /* Show the drawer toggle button on small screens */
+    display: block;
   }
 
   .navbar-nav {
-    display: none; /* Hide the full navigation links on small screens */
+    display: none;   
   }
 }
 
-@media (min-width:600px) { /* Larger screens */
+@media (min-width:600px) { 
   .drawer-toggle {
-    display: none; /* Hide the drawer toggle button on larger screens */
+    display: none; 
   }
 
   .drawer {
-    display: none; /* Ensure drawer is hidden on larger screens */
+    display: none; 
   }
 }

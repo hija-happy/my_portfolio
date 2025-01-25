@@ -5,11 +5,13 @@
   font-style: normal;
 }
 
-/* General Styles */
 .landing-page {
   position: relative;
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -19,7 +21,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Makes the video cover the entire background */
+  object-fit: cover; 
+  filter: brightness(0.9);
   z-index: -1;
 }
 
@@ -32,43 +35,45 @@
   text-align: center;
 }
 
-
 .overlay {
-    position: absolute; /* Sit on top of the page content */
-      width: 200px; /* Full width (cover the whole page) */
-    height: 200px; /* Full height (cover the whole page) */
-    top: 120px;
-    left: 30;
-    right: 20;
-    bottom: 40;
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }
-
-
-.logo {
-  width: 200px; /* Adjust size as needed */
+  width: 200px;
   height: 200px;
-  /* Reduce space between logo and name */
+  margin-bottom: 20px; 
 }
 
 .name {
   font-family: 'Dancing Matilda', 'Dancing Script', cursive;
   color: #0a3663;
-  font-size: 5rem; /* Adjust font size if necessary */
-  margin-top: 10px; /* Remove any extra space above the name */
-  margin-bottom: 10px; /* Reduce space below the name */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds shadow to make text readable over video */
+  font-size: 5rem; 
+  margin: 0; 
 }
 
 .arrow {
-  margin-bottom: 10; /* Reduce the space between the name and the arrow */
+  margin-top: 20px; 
   font-size: 3rem;
   color: #0a3663;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
+
+ /* Smooth movement when hovering */
 .arrow:hover {
-  transform: translateY(10px); /* Smooth movement when hovering */
+  transform: translateY(10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .overlay {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .arrow {
+    font-size: 2rem;
+  }
 }

@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  
  
 }
 
@@ -26,7 +27,7 @@ body {
   justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
   min-height: calc(100vh - 80px); /* Ensure the section takes full viewport height minus footer height */
-  background-color: #e0f7fa; /* Light blue background */
+  background-color: #a9cdee; /* Light blue background */
   color: #000; /* Dark text color for contrast */
   padding: 0 20px; /* Padding for left and right, no top/bottom padding */
   box-sizing: border-box; /* Includes padding in the total width/height */
