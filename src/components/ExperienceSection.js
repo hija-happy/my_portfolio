@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import experienceData from '../assets/json/experienceData.json';
 import './ExperienceSection.css';
 
 const ExperienceSection = () => {
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  // Function to CHECK SCREEN SIZE
+
+  const checkScreenSize = () => { 
+    setIsSmallScreen(window.innerWidth < 768);
+  } 
+
+  useEffect(() => {
+    checkScreenSize(); // Check initial screen size
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize); // Cleanup on unmount
+  }, []);
+
   return (
     <section id='experience' className='experience-section'>
       <h2>Experience</h2>
@@ -19,13 +34,18 @@ const ExperienceSection = () => {
                 className='company-logo'
               />
             </div>
-            <div className='experience-info'>
+            <div className="experience-info">
               <h3>{experience.companyName}</h3>
               <h4>{experience.projectTitle}</h4>
-              {experience.description.map((line, i) => (
-                <p key={i}>{line}</p>
-              ))}
-              <p><strong>Tech Stack:</strong> {experience.techStack.join(', ')}</p>
+              {!isSmallScreen &&
+                experience.description.map((line, i) => (
+                  <p key={i}>{line}</p>
+                ))}
+              
+                <p>
+                  <strong>Tech Stack:</strong> {experience.techStack.join(', ')}
+                </p>
+             
             </div>
           </div>
         ))}

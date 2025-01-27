@@ -24,19 +24,19 @@ const App = () => {
     <div>
      <Navbar scrollToSection={scrollToSection} refs={{ aboutRef, experienceRef, projectsRef,contactRef}} />
 
-     <div ref={aboutRef}> 
+     <div id="about" ref={aboutRef}> 
       <About/>
      </div>
 
-     <div ref={experienceRef}> 
+     <div id="experience" ref={experienceRef}> 
       <Experience/>
      </div>
 
-     <div ref={projectsRef}> 
+     <div id="projects" ref={projectsRef}> 
       <Projects/>
      </div>
 
-     <div ref={contactRef}> 
+     <div id="contact" ref={contactRef}> 
       <Contact/>
      </div>
      

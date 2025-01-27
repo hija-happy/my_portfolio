@@ -55,3 +55,26 @@ p {
 p strong {
   color: #333;
 }
+
+/* Responsive SMALLER SCREENS */
+
+@media screen and (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .company-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .experience-content p {
+    display: none; /* Hide all descriptions and tech stack */
+  }
+
+  .experience-info h3, .experience-info h4 {
+    display: block; /* Keep company name and project title visible */
+  }
+}
